@@ -253,7 +253,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-$settings['config_sync_directory'] = '../config';
+# $settings['config_sync_directory'] = '/directory/outside/webroot';
 
 /**
  * Settings:
@@ -282,7 +282,7 @@ $settings['config_sync_directory'] = '../config';
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'MDXugiBg_4gHy3aferR-Eip1Q8OQ12UFvlTdDOjkJ6BwFwExuxAi2DXNy-kv69VSvlk8r2jwIbSsnA';
 
 /**
  * Deployment identifier.
@@ -714,10 +714,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
-$settings['trusted_host_patterns'] = array(
-  '^lndo\.site$',
-  '^.+\.lndo\.site$',
- );
+
 /**
  * The default list of directories that will be ignored by Drupal's file API.
  *
@@ -782,18 +779,14 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-
-
-if (getenv('LANDO') === 'ON') {
-  $lando_info = json_decode(getenv('LANDO_INFO'), TRUE);
-  $settings['trusted_host_patterns'] = ['.*'];
-  $settings['hash_salt'] = md5(getenv('LANDO_HOST_IP'));
-  $databases['default']['default'] = [
-    'driver' => 'mysql',
-    'database' => $lando_info['database']['creds']['database'],
-    'username' => $lando_info['database']['creds']['user'],
-    'password' => $lando_info['database']['creds']['password'],
-    'host' => $lando_info['database']['internal_connection']['host'],
-    'port' => $lando_info['database']['internal_connection']['port'],
-  ];
-}
+$databases['default']['default'] = array (
+  'database' => 'drupal9',
+  'username' => 'drupal9',
+  'password' => 'drupal9',
+  'prefix' => '',
+  'host' => 'database',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['config_sync_directory'] = '../config/sync';
