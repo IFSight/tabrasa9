@@ -1,0 +1,20 @@
+.DS_Store
+Thumbs.db
+.idea/
+*~
+*.log
+*.rej
+*.orig
+
+# Config Ignore files that should never be committed.
+# These contain sensitive data and should remain as default/blank.
+# Other config ignore files without sensitive data can be committed
+# and are not gitignored.
+/config/sync/cloudflare.settings.yml
+/config/sync/google_analytics.settings.yml
+/config/sync/if_govdelivery.settings.yml
+/config/sync/recaptcha.settings.yml
+/config/sync/smtp.settings.yml
+
+web/sites/default/files/*
+docroot/sites/default/files/*

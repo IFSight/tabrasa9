@@ -1,0 +1,15 @@
+uuid: 16c98ed7-d8d7-43bc-8bc1-c4879969a451
+name: Tabrasa9
+mail: tabrasa9@ifsight.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''
