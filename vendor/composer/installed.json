@@ -420,17 +420,17 @@
     },
     {
         "name": "composer/composer",
-        "version": "2.0.14",
-        "version_normalized": "2.0.14.0",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/composer/composer.git",
-            "reference": "92b2ccbef65292ba9f2004271ef47c7231e2eed5"
+            "reference": "59bb0df323c75308e6a72c6c9bc7dc8cc577f1ca"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/composer/zipball/92b2ccbef65292ba9f2004271ef47c7231e2eed5",
-            "reference": "92b2ccbef65292ba9f2004271ef47c7231e2eed5",
+            "url": "https://api.github.com/repos/composer/composer/zipball/59bb0df323c75308e6a72c6c9bc7dc8cc577f1ca",
+            "reference": "59bb0df323c75308e6a72c6c9bc7dc8cc577f1ca",
             "shasum": ""
         },
         "require": {
@@ -459,14 +459,14 @@
             "ext-zip": "Enabling the zip extension allows you to unzip archives",
             "ext-zlib": "Allow gzip compression of HTTP requests"
         },
-        "time": "2021-05-21T15:03:37+00:00",
+        "time": "2021-06-03T09:30:09+00:00",
         "bin": [
             "bin/composer"
         ],
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.0-dev"
+                "dev-master": "2.1-dev"
             }
         },
         "installation-source": "dist",
@@ -2279,72 +2279,6 @@
         }
     },
     {
-        "name": "drupal/blazy",
-        "version": "2.2.0",
-        "version_normalized": "2.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/blazy.git",
-            "reference": "8.x-2.2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.2.zip",
-            "reference": "8.x-2.2",
-            "shasum": "ed2aed0ba8d51ef7ad4ad41c30c0185938d14d53"
-        },
-        "require": {
-            "drupal/core": "^8.8 || ^9"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-2.2",
-                "datestamp": "1618669374",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "Gaus Surahman",
-                "homepage": "https://www.drupal.org/u/gausarts",
-                "role": "Maintainer"
-            },
-            {
-                "name": "Contributors",
-                "homepage": "https://www.drupal.org/node/2663268/committers",
-                "role": "Contributor"
-            },
-            {
-                "name": "geek-merlin",
-                "homepage": "https://www.drupal.org/user/229048"
-            },
-            {
-                "name": "sun",
-                "homepage": "https://www.drupal.org/user/54136"
-            }
-        ],
-        "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
-        "homepage": "https://drupal.org/project/blazy",
-        "keywords": [
-            "Drupal",
-            "bLazy",
-            "lazyload"
-        ],
-        "support": {
-            "source": "https://git.drupalcode.org/project/blazy",
-            "issues": "https://drupal.org/project/issues/blazy"
-        }
-    },
-    {
         "name": "drupal/block_field",
         "version": "1.0.0-rc2",
         "version_normalized": "1.0.0.0-RC2",
@@ -4048,72 +3982,6 @@
         }
     },
     {
-        "name": "drupal/geolocation",
-        "version": "3.6.0",
-        "version_normalized": "3.6.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/geolocation.git",
-            "reference": "8.x-3.6"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-3.6.zip",
-            "reference": "8.x-3.6",
-            "shasum": "96b388fea50609bfa52257a704c2fb08cf8c530d"
-        },
-        "require": {
-            "drupal/core": "^8.7.7 || ^9"
-        },
-        "require-dev": {
-            "drupal/address": "*",
-            "drupal/geofield": "*",
-            "drupal/geolocation_demo": "*",
-            "drupal/geolocation_geometry": "*",
-            "drupal/geolocation_geometry_data": "*",
-            "drupal/geolocation_geometry_natural_earth_countries": "*",
-            "drupal/geolocation_google_maps": "*",
-            "drupal/geolocation_google_maps_demo": "*",
-            "drupal/geolocation_google_static_maps": "*",
-            "drupal/geolocation_leaflet": "*",
-            "drupal/search_api": "*",
-            "drupal/search_api_location": "*",
-            "drupal/search_api_location_views": "*"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-3.6",
-                "datestamp": "1622022802",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "derjochenmeyer",
-                "homepage": "https://www.drupal.org/u/derjochenmeyer"
-            },
-            {
-                "name": "cadamski",
-                "homepage": "https://www.drupal.org/u/cadamski"
-            }
-        ],
-        "description": "Provides a simple geolocation Drupal field type to store and display location data (lat, lng).",
-        "homepage": "https://www.drupal.org/project/geolocation",
-        "support": {
-            "source": "https://git.drupal.org/project/geolocation.git",
-            "issues": "https://www.drupal.org/project/issues/geolocation"
-        }
-    },
-    {
         "name": "drupal/google_analytics",
         "version": "3.1.0",
         "version_normalized": "3.1.0.0",
@@ -4184,92 +4052,6 @@
         "support": {
             "source": "https://git.drupal.org/project/google_analytics.git",
             "issues": "https://www.drupal.org/project/issues/google_analytics"
-        }
-    },
-    {
-        "name": "drupal/inline_entity_form",
-        "version": "1.0.0-rc9",
-        "version_normalized": "1.0.0.0-RC9",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-            "reference": "8.x-1.0-rc9"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc9.zip",
-            "reference": "8.x-1.0-rc9",
-            "shasum": "78953103a9c6e4e44bc877820a35f39913ea4559"
-        },
-        "require": {
-            "drupal/core": "^8.8 || ^9",
-            "php": ">=7.1"
-        },
-        "require-dev": {
-            "drupal/entity_reference_revisions": "^1.0"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-1.0-rc9",
-                "datestamp": "1618174486",
-                "security-coverage": {
-                    "status": "not-covered",
-                    "message": "RC releases are not covered by Drupal security advisories."
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "bojanz",
-                "homepage": "https://www.drupal.org/user/86106"
-            },
-            {
-                "name": "dawehner",
-                "homepage": "https://www.drupal.org/user/99340"
-            },
-            {
-                "name": "geek-merlin",
-                "homepage": "https://www.drupal.org/user/229048"
-            },
-            {
-                "name": "joachim",
-                "homepage": "https://www.drupal.org/user/107701"
-            },
-            {
-                "name": "jsacksick",
-                "homepage": "https://www.drupal.org/user/972218"
-            },
-            {
-                "name": "kaythay",
-                "homepage": "https://www.drupal.org/user/2182186"
-            },
-            {
-                "name": "oknate",
-                "homepage": "https://www.drupal.org/user/471638"
-            },
-            {
-                "name": "rszrama",
-                "homepage": "https://www.drupal.org/user/49344"
-            },
-            {
-                "name": "slashrsm",
-                "homepage": "https://www.drupal.org/user/744628"
-            },
-            {
-                "name": "webflo",
-                "homepage": "https://www.drupal.org/user/254778"
-            }
-        ],
-        "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
-        "homepage": "https://www.drupal.org/project/inline_entity_form",
-        "support": {
-            "source": "https://git.drupalcode.org/project/inline_entity_form"
         }
     },
     {
@@ -4526,74 +4308,6 @@
         "support": {
             "source": "https://www.drupal.org/project/jquery_ui_touch_punch",
             "issues": "https://www.drupal.org/project/issues/jquery_ui_touch_punch",
-            "irc": "irc://irc.freenode.org/drupal-contribute"
-        }
-    },
-    {
-        "name": "drupal/libraries",
-        "version": "3.0.0-beta1",
-        "version_normalized": "3.0.0.0-beta1",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/libraries.git",
-            "reference": "8.x-3.0-beta1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/libraries-8.x-3.0-beta1.zip",
-            "reference": "8.x-3.0-beta1",
-            "shasum": "7843870c52251cc5290e1cdca94524f71edbf016"
-        },
-        "require": {
-            "drupal/core": "^8 || ^9"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-3.0-beta1",
-                "datestamp": "1618261123",
-                "security-coverage": {
-                    "status": "not-covered",
-                    "message": "Beta releases are not covered by Drupal security advisories."
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "Pol",
-                "homepage": "https://www.drupal.org/user/47194"
-            },
-            {
-                "name": "joseph.olstad",
-                "homepage": "https://www.drupal.org/user/1321830"
-            },
-            {
-                "name": "podarok",
-                "homepage": "https://www.drupal.org/user/116002"
-            },
-            {
-                "name": "rjacobs",
-                "homepage": "https://www.drupal.org/user/422459"
-            },
-            {
-                "name": "sun",
-                "homepage": "https://www.drupal.org/user/54136"
-            },
-            {
-                "name": "tstoeckler",
-                "homepage": "https://www.drupal.org/user/107158"
-            }
-        ],
-        "description": "Allows version-dependent and shared usage of external libraries in Drupal.",
-        "homepage": "http://drupal.org/project/libraries",
-        "support": {
-            "source": "http://cgit.drupalcode.org/libraries",
-            "issues": "http://drupal.org/project/issues/libraries",
             "irc": "irc://irc.freenode.org/drupal-contribute"
         }
     },
@@ -5153,62 +4867,6 @@
         }
     },
     {
-        "name": "drupal/purge_queuer_url",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/purge_queuer_url.git",
-            "reference": "8.x-1.0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/purge_queuer_url-8.x-1.0.zip",
-            "reference": "8.x-1.0",
-            "shasum": "f0008bf6477f4ed119a709d114673396e16e7336"
-        },
-        "require": {
-            "drupal/core": "^8.8.6 || ^9",
-            "drupal/purge": "^3.0.0",
-            "php": ">=7.2"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-1.0",
-                "datestamp": "1590746554",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            },
-            "branch-alias": {
-                "dev-8.x-1.x": "1.x-dev"
-            },
-            "drush": {
-                "services": {
-                    "drush.services.yml": "^10"
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "Niels van Mourik",
-                "homepage": "http://www.nielsvm.org"
-            }
-        ],
-        "description": "Queues URLs or paths to your Purge queue utilizing a traffic database.",
-        "homepage": "https://www.drupal.org/project/purge_queuer_url",
-        "support": {
-            "source": "https://git.drupalcode.org/project/purge_queuer_url"
-        }
-    },
-    {
         "name": "drupal/recaptcha",
         "version": "3.0.0",
         "version_normalized": "3.0.0.0",
@@ -5662,128 +5320,6 @@
             "source": "https://cgit.drupalcode.org/simple_sitemap",
             "issues": "https://drupal.org/project/issues/simple_sitemap",
             "irc": "irc://irc.freenode.org/drupal-contribute"
-        }
-    },
-    {
-        "name": "drupal/slick",
-        "version": "2.3.0",
-        "version_normalized": "2.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/slick.git",
-            "reference": "8.x-2.3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.3.zip",
-            "reference": "8.x-2.3",
-            "shasum": "5974f94c8b2d3e791e8ff9092b1bb566a27ad8f6"
-        },
-        "require": {
-            "drupal/blazy": "~2.0",
-            "drupal/core": "^8.8 || ^9"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-2.3",
-                "datestamp": "1618668938",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "Contributors",
-                "homepage": "https://www.drupal.org/node/2232779/committers",
-                "role": "Contributors"
-            },
-            {
-                "name": "gausarts",
-                "homepage": "https://www.drupal.org/user/159062"
-            },
-            {
-                "name": "thalles",
-                "homepage": "https://www.drupal.org/user/3589086"
-            }
-        ],
-        "description": "Slick carousel, the last carousel you'll ever need.",
-        "homepage": "https://drupal.org/project/slick",
-        "keywords": [
-            "Drupal",
-            "carousel",
-            "slideshow"
-        ],
-        "support": {
-            "source": "https://git.drupalcode.org/project/slick",
-            "issues": "https://drupal.org/project/issues/slick"
-        }
-    },
-    {
-        "name": "drupal/slick_browser",
-        "version": "2.2.0",
-        "version_normalized": "2.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/slick_browser.git",
-            "reference": "8.x-2.2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/slick_browser-8.x-2.2.zip",
-            "reference": "8.x-2.2",
-            "shasum": "70c1167c723637aca0b2066060fe588f23dcd016"
-        },
-        "require": {
-            "drupal/core": "^8.8 || ^9",
-            "drupal/entity_browser": "~2.0",
-            "drupal/slick": "~2.0"
-        },
-        "require-dev": {
-            "drupal/dropzonejs": "~2.0",
-            "drupal/entity_browser_entity_form": "*",
-            "drupal/inline_entity_form": "*"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-2.2",
-                "datestamp": "1618668693",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Gaus Surahman",
-                "homepage": "https://www.drupal.org/u/gausarts",
-                "role": "Maintainer"
-            },
-            {
-                "name": "Contributors",
-                "homepage": "https://www.drupal.org/node/2823779/committers",
-                "role": "Contributor"
-            }
-        ],
-        "description": "A Slick Entity Browser integration",
-        "homepage": "https://www.drupal.org/project/slick_browser",
-        "support": {
-            "source": "http://cgit.drupalcode.org/slick_browser",
-            "issues": "https://www.drupal.org/project/issues/slick_browser"
         }
     },
     {
@@ -6253,90 +5789,6 @@
         "homepage": "https://www.drupal.org/project/varnish_purge",
         "support": {
             "source": "https://git.drupalcode.org/project/varnish_purge"
-        }
-    },
-    {
-        "name": "drupal/viewsreference",
-        "version": "1.7.0",
-        "version_normalized": "1.7.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/viewsreference.git",
-            "reference": "8.x-1.7"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/viewsreference-8.x-1.7.zip",
-            "reference": "8.x-1.7",
-            "shasum": "6656c717cd78bee180fcc075d28db016fa7775d9"
-        },
-        "require": {
-            "drupal/core": "^8.6|^9.0",
-            "php": "^5.5|^7.0",
-            "squizlabs/php_codesniffer": "*"
-        },
-        "conflict": {
-            "drupal/viewsreferennce": "*"
-        },
-        "require-dev": {
-            "composer/installers": "^1.2",
-            "drupal-composer/drupal-scaffold": "^2.5",
-            "drupal/coder": "^8.2",
-            "webflo/drupal-core-require-dev": "~8.5"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-1.7",
-                "datestamp": "1610571201",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            },
-            "installer-paths": {
-                "../build/core": [
-                    "type:drupal-core"
-                ],
-                "../build/modules/contrib/{$name}": [
-                    "type:drupal-module"
-                ],
-                "../build/themes/contrib/{$name}": [
-                    "type:drupal-theme"
-                ]
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "New Zeal",
-                "homepage": "https://www.drupal.org/user/93571"
-            },
-            {
-                "name": "jasonawant",
-                "homepage": "https://www.drupal.org/user/589890"
-            },
-            {
-                "name": "joekers",
-                "homepage": "https://www.drupal.org/user/2229066"
-            },
-            {
-                "name": "seanB",
-                "homepage": "https://www.drupal.org/user/545912"
-            }
-        ],
-        "description": "Views Reference",
-        "homepage": "http://drupal.org/project/viewsreference",
-        "keywords": [
-            "Drupal"
-        ],
-        "support": {
-            "source": "http://cgit.drupalcode.org/viewsreference",
-            "issues": "http://drupal.org/project/issues/viewsreference"
         }
     },
     {
