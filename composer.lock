@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "71f4e667649b6d52b1f4c5c37939def6",
+    "content-hash": "31fddb4babd0dab5e095c17d442d44dd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -919,16 +919,16 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf"
+                "reference": "9888dcc74993c030b75f3dd548bb5e20cdbd740c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/ae02121445ad75f4eaff800cc532b5e6233e2ddf",
-                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/9888dcc74993c030b75f3dd548bb5e20cdbd740c",
+                "reference": "9888dcc74993c030b75f3dd548bb5e20cdbd740c",
                 "shasum": ""
             },
             "require": {
@@ -959,7 +959,7 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "time": "2020-09-30T17:56:20+00:00"
+            "time": "2021-06-08T15:12:46+00:00"
         },
         {
             "name": "d8-contrib-modules/cloudflarephpsdk",
@@ -5627,6 +5627,29 @@
             "type": "drupal-module"
         },
         {
+            "name": "ifsight/paladin",
+            "version": "v9.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@git.ifsight.net:proj/contrib/if-paladin-theme.git",
+                "reference": "c3a4a50e0940a974b75b63598b642ba2500b07fb"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Paladin is a Drupal base theme",
+            "homepage": "http://git.ifsight.com/proj/contrib/if-paladin-theme",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "http://git.ifsight.net/proj/contrib/if-paladin-theme/issues",
+                "source": "http://git.ifsight.com/proj/contrib/if-paladin-theme"
+            },
+            "time": "2021-06-09T22:49:03+00:00"
+        },
+        {
             "name": "laminas/laminas-diactoros",
             "version": "2.5.0",
             "source": {
@@ -6913,16 +6936,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.88",
+            "version": "0.12.89",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "464d1a81af49409c41074aa6640ed0c4cbd9bb68"
+                "reference": "54c0f5a6c30511b77128d58b6369f718df250542"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/464d1a81af49409c41074aa6640ed0c4cbd9bb68",
-                "reference": "464d1a81af49409c41074aa6640ed0c4cbd9bb68",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/54c0f5a6c30511b77128d58b6369f718df250542",
+                "reference": "54c0f5a6c30511b77128d58b6369f718df250542",
                 "shasum": ""
             },
             "require": {
@@ -6957,6 +6980,10 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/phpstan",
+                    "type": "github"
+                },
+                {
                     "url": "https://www.patreon.com/phpstan",
                     "type": "patreon"
                 },
@@ -6965,7 +6992,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-17T12:24:49+00:00"
+            "time": "2021-06-09T20:23:49+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -10371,16 +10398,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "1845e6854aa3f37f2c6c24bc525541b00b8b28e4"
+                "reference": "fc5c4573aafce3a018eb7f1f8f91cea423970f2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/1845e6854aa3f37f2c6c24bc525541b00b8b28e4",
-                "reference": "1845e6854aa3f37f2c6c24bc525541b00b8b28e4",
+                "url": "https://api.github.com/repos/composer/composer/zipball/fc5c4573aafce3a018eb7f1f8f91cea423970f2e",
+                "reference": "fc5c4573aafce3a018eb7f1f8f91cea423970f2e",
                 "shasum": ""
             },
             "require": {
@@ -10460,7 +10487,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-07T14:03:06+00:00"
+            "time": "2021-06-09T14:31:20+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -13492,7 +13519,8 @@
         "drupal/config_split": 10,
         "drupal/linkit": 10,
         "drupal/plupload": 10,
-        "drupal/ultimate_cron": 15
+        "drupal/ultimate_cron": 15,
+        "ifsight/paladin": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
