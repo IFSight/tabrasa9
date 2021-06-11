@@ -1,5 +1,5 @@
 {
-    "name": "drupal/recommended-project",
+    "name": "Tabrasa9",
     "description": "Project template for Drupal 9 projects with a relocated document root",
     "type": "project",
     "license": "GPL-2.0-or-later",
@@ -76,6 +76,11 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "require-sub-modules": "echo 'Deleting docroot .git folders so the code is visible.'; ( find ./docroot -type d -name '.git' ) | xargs -0 rm -rf",
+        "post-package-install": "@require-sub-modules",
+        "post-update-cmd": "@require-sub-modules"
     },
     "extra": {
         "drupal-scaffold": {
