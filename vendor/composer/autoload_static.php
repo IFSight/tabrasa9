@@ -119,7 +119,6 @@ class ComposerStaticInitda06f0aba468f7896e5ffa56e1bedecf
         array (
             'Robo\\' => 5,
             'React\\Promise\\' => 14,
-            'ReCaptcha\\' => 10,
         ),
         'P' => 
         array (
@@ -421,10 +420,6 @@ class ComposerStaticInitda06f0aba468f7896e5ffa56e1bedecf
         'React\\Promise\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/promise/src',
-        ),
-        'ReCaptcha\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
         ),
         'Psy\\' => 
         array (

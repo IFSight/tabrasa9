@@ -42,7 +42,6 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/purge": "^3.0",
-        "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.5",
         "drupal/role_delegation": "^1.1",
