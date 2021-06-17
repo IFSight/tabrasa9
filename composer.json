@@ -50,7 +50,6 @@
         "drupal/token": "^1.9",
         "drupal/twig_tweak": "^3.0",
         "drupal/ultimate_cron": "@alpha",
-        "drupal/upgrade_status": "^3.0",
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^10.4",
         "ifsight/fulcrum_whitelist": "1.1.0",
