@@ -43,7 +43,6 @@
         "drupal/metatag": "^1.16",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
-        "drupal/plupload": "^2.0@beta",
         "drupal/purge": "^3.0",
         "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.6",
