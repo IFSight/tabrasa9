@@ -35,7 +35,6 @@
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/environment_indicator": "^4.0",
         "drupal/field_group": "^3.1",
-        "drupal/google_analytics": "^3.1",
         "drupal/linkit": "@beta",
         "drupal/mailsystem": "^4.3",
         "drupal/menu_block": "^1.6",
