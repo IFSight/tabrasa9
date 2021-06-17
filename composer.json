@@ -59,7 +59,6 @@
         "drupal/ultimate_cron": "@alpha",
         "drupal/upgrade_status": "^3.0",
         "drupal/varnish_purge": "^2.1",
-        "drupal/webform": "^6.0",
         "drush/drush": "^10.4",
         "ifsight/fulcrum_whitelist": "1.1.0",
         "ifsight/if_admin": "0.1",
