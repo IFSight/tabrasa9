@@ -57,6 +57,8 @@ module:
   purge_ui: 0
   quickedit: 0
   rdf: 0
+  redirect: 0
+  redirect_404: 0
   role_delegation: 0
   search: 0
   shortcut: 0
