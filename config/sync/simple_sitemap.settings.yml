@@ -10,3 +10,9 @@ enabled_entity_types:
 _core:
   default_config_hash: TtQzZyIf0d3IThxcwI-L1v5Q85hlh8yT6sNtIJrrfHc
 default_variant: default
+cron_generate_interval: 0
+xsl: true
+disable_language_hreflang: false
+entities_per_queue_item: 50
+excluded_languages: {  }
+generate_duration: 10000
