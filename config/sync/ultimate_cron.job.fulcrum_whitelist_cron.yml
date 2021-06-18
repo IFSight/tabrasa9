@@ -1,0 +1,17 @@
+uuid: ffa0656d-9b29-4028-8ed2-dd553e7837c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - fulcrum_whitelist
+title: 'Default cron handler'
+id: fulcrum_whitelist_cron
+weight: 0
+module: fulcrum_whitelist
+callback: fulcrum_whitelist_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
