@@ -52,11 +52,11 @@
         "drupal/ultimate_cron": "@alpha",
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^10.4",
-        "ifsight/fulcrum_whitelist": "1.1.0",
+        "ifsight/fulcrum_whitelist": "^9.1.x-dev",
         "ifsight/if_admin": "0.1",
         "ifsight/if_helper": "0.1",
         "ifsight/if_varnish_purge_tags": "0.2",
-        "ifsight/paladin": "v9.0.x-dev",
+        "ifsight/paladin": "^9.1.x-dev",
         "oomphinc/composer-installers-extender": "^2.0",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
@@ -140,17 +140,8 @@
             "url": "git@git.ifsight.net:proj/contrib/if-paladin-theme.git"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "ifsight/fulcrum_whitelist",
-                "version": "1.1.0",
-                "type": "drupal-module",
-                "source": {
-                    "url": "git@git.ifsight.net:proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git",
-                    "type": "git",
-                    "reference": "1.1.0"
-                }
-            }
+            "type": "vcs",
+            "url": "git@git.ifsight.net:proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git"
         },
         {
             "type": "package",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31659aa27644b482921c9ef5b958248d",
+    "content-hash": "6fc58e5bb478c61b5c6947520f422c6a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4828,13 +4828,29 @@
         },
         {
             "name": "ifsight/fulcrum_whitelist",
-            "version": "1.1.0",
+            "version": "9.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@git.ifsight.net:proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git",
-                "reference": "1.1.0"
+                "reference": "26560df951af6b0877e20cf425181c00080fb32b"
             },
-            "type": "drupal-module"
+            "require": {
+                "drupal/core": "^8.8.0|^9.0"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "On Fulcrum environment whitelist authenticated users",
+            "homepage": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8/issues",
+                "source": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git"
+            },
+            "time": "2021-06-18T00:20:50+00:00"
         },
         {
             "name": "ifsight/if_admin",
@@ -4868,11 +4884,14 @@
         },
         {
             "name": "ifsight/paladin",
-            "version": "v9.0.x-dev",
+            "version": "9.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@git.ifsight.net:proj/contrib/if-paladin-theme.git",
-                "reference": "c3a4a50e0940a974b75b63598b642ba2500b07fb"
+                "reference": "3fb3c5a8f18dbbcb8bb0e8b6e20e5e8d6afd2477"
+            },
+            "require": {
+                "drupal/core": "^8.8.0|^9.0"
             },
             "type": "drupal-theme",
             "license": [
@@ -4887,7 +4906,7 @@
                 "issues": "http://git.ifsight.net/proj/contrib/if-paladin-theme/issues",
                 "source": "http://git.ifsight.com/proj/contrib/if-paladin-theme"
             },
-            "time": "2021-06-09T22:49:03+00:00"
+            "time": "2021-06-18T00:15:05+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -11453,6 +11472,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
@@ -12231,6 +12251,7 @@
         "drupal/config_split": 10,
         "drupal/linkit": 10,
         "drupal/ultimate_cron": 15,
+        "ifsight/fulcrum_whitelist": 20,
         "ifsight/paladin": 20
     },
     "prefer-stable": true,
