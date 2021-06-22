@@ -35,6 +35,7 @@
         "drupal/environment_indicator": "^4.0",
         "drupal/field_group": "^3.1",
         "drupal/focal_point": "^1.5",
+        "drupal/fontawesome": "^2.19",
         "drupal/linkit": "@beta",
         "drupal/mailsystem": "^4.3",
         "drupal/menu_block": "^1.6",
