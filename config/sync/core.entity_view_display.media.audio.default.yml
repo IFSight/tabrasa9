@@ -16,7 +16,7 @@ mode: default
 content:
   field_media_audio_file:
     weight: 1
-    label: visually_hidden
+    label: hidden
     settings:
       controls: true
       autoplay: false

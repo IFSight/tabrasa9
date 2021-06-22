@@ -5,10 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.audio.field_media_audio_file
-    - image.style.thumbnail
     - media.type.audio
   module:
-    - image
+    - file
 _core:
   default_config_hash: bluLijrv0ELGIq1uFR777kImy6ZH6VLl8mBCOwvuLg4
 id: media.audio.media_library
@@ -16,17 +15,26 @@ targetEntityType: media
 bundle: audio
 mode: media_library
 content:
-  thumbnail:
-    type: image
+  field_media_audio_file:
+    type: file_audio
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+  name:
+    type: string
     weight: 0
     region: content
-    label: hidden
+    label: visually_hidden
     settings:
-      image_style: thumbnail
-      image_link: ''
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
   created: true
-  field_media_audio_file: true
-  name: true
+  thumbnail: true
   uid: true
