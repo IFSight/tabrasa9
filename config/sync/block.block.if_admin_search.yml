@@ -1,0 +1,23 @@
+uuid: 4518950a-d779-4ab7-a8a4-56b21739552d
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - if_admin
+_core:
+  default_config_hash: 54eXac8D0kIqNDgjkD-pJNQrdcHAcnnwk8CEA8NwRsY
+id: if_admin_search
+theme: if_admin
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

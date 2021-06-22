@@ -1,0 +1,25 @@
+uuid: b02fcee0-2820-4cf5-8b98-decbe270e6dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - if_admin
+_core:
+  default_config_hash: XLiDtprfkEaA4leg4efBKN4ozNOpnbTX1aOwF2vA2_w
+id: if_admin_branding
+theme: if_admin
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
