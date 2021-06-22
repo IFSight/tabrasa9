@@ -16,6 +16,7 @@ module:
   config_filter: 0
   config_ignore: 0
   config_split: 0
+  content_moderation: 0
   contextual: 0
   crop: 0
   ctools: 0
@@ -68,6 +69,8 @@ module:
   redirect: 0
   redirect_404: 0
   role_delegation: 0
+  scheduler: 0
+  scheduler_content_moderation_integration: 0
   search: 0
   shortcut: 0
   simple_sitemap: 0
@@ -83,6 +86,7 @@ module:
   user: 0
   varnish_purger: 0
   views_ui: 0
+  workflows: 0
   menu_link_content: 1
   pathauto: 1
   views: 10
