@@ -1,28 +1,27 @@
-uuid: 9d1d8370-f7d7-474e-abe7-05f25a107bcf
+uuid: 0195c8b1-7ca0-41ea-93ba-b15cba619db9
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_index
     - field.field.node.page.field_summary
     - node.type.page
   module:
     - user
 _core:
   default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
-id: node.page.default
+id: node.page.search_index
 targetEntityType: node
 bundle: page
-mode: default
+mode: search_index
 content:
-  content_moderation_control:
+  field_summary:
+    type: basic_string
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  links:
-    weight: 1
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_summary: true
+  content_moderation_control: true
+  links: true
