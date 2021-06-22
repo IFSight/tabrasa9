@@ -15,10 +15,22 @@ settings:
     rows:
       -
         -
+          name: 'Text Formatting'
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+        -
           name: Formatting
           items:
+            - Underline
             - Bold
             - Italic
+            - Strike
+            - Subscript
+            - Superscript
+            - RemoveFormat
         -
           name: Linking
           items:
@@ -29,30 +41,39 @@ settings:
           items:
             - BulletedList
             - NumberedList
+            - Outdent
+            - Indent
         -
           name: Media
           items:
             - Blockquote
-            - media
-            - DrupalImage
+            - Table
+            - HorizontalRule
         -
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
             - Source
+            - Cut
+            - Copy
+            - Paste
+            - PasteText
+            - PasteFromWord
+            - Maximize
   plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
     language:
       language_list: un
     stylescombo:
       styles: ''
-    drupallink:
-      linkit_enabled: true
-      linkit_profile: ''
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''
