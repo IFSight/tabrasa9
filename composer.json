@@ -61,7 +61,7 @@
         "ifsight/if_admin": "0.1",
         "ifsight/if_helper": "0.1",
         "ifsight/if_varnish_purge_tags": "0.2",
-        "ifsight/paladin": "v9.0.x-dev",
+        "ifsight/paladin": "v9.1.x-dev",
         "oomphinc/composer-installers-extender": "^2.0",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
