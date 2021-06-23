@@ -68,7 +68,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "alpha",
     "prefer-stable": true,
     "config": {
         "sort-packages": true
