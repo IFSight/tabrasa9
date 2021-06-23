@@ -19,7 +19,7 @@ filters:
     status: true
     weight: -46
     settings:
-      allowed_html: '<a href hreflang data-entity-type data-entity-uuid data-entity-substitution> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <span> <img src alt height width data-entity-type data-entity-uuid data-entity-substitution data-align data-caption> <drupal-entity data-entity-type data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <u> <sup> <sub> <s> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr>'
+      allowed_html: '<a href hreflang data-entity-substitution data-entity-type data-entity-uuid class> <div class> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <br> <span> <img src alt height width data-entity-type data-entity-uuid data-entity-substitution data-align data-caption> <drupal-entity data-entity-type data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <u> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <i class> <p class="text-align-left text-align-center text-align-right text-align-justify"> <sup> <sub> <s> <strike> <hr>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:

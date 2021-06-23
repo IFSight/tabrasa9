@@ -1,0 +1,42 @@
+uuid: e5aa40fc-308c-4c72-a429-44d1ad3531f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - linkit
+    - media
+name: 'Simple with Link'
+format: simple_with_link
+weight: -7
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<p> <br> <em> <strong> <a href hreflang data-entity-substitution data-entity-type data-entity-uuid title>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

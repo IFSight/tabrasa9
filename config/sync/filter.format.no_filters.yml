@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'No Filters'
 format: no_filters
-weight: -8
+weight: -4
 filters: {  }
