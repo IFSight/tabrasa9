@@ -29,7 +29,7 @@
         "drupal/date_popup": "^1.1",
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/entity": "^1.2",
-        "drupal/entity_browser": "^2.5",
+        "drupal/entity_browser": "^2.6",
         "drupal/entity_embed": "^1.1",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/environment_indicator": "^4.0",
