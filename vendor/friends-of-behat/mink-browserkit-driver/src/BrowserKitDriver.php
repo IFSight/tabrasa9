@@ -12,7 +12,7 @@ namespace Behat\Mink\Driver;
 
 use Behat\Mink\Exception\DriverException;
 use Behat\Mink\Exception\UnsupportedDriverActionException;
-use Symfony\Component\BrowserKit\Client;
+use Symfony\Component\BrowserKit\AbstractBrowser;
 use Symfony\Component\BrowserKit\Cookie;
 use Symfony\Component\BrowserKit\Exception\BadMethodCallException;
 use Symfony\Component\BrowserKit\Response;
@@ -23,7 +23,7 @@ use Symfony\Component\DomCrawler\Field\FormField;
 use Symfony\Component\DomCrawler\Field\InputFormField;
 use Symfony\Component\DomCrawler\Field\TextareaFormField;
 use Symfony\Component\DomCrawler\Form;
-use Symfony\Component\HttpKernel\Client as HttpKernelClient;
+use Symfony\Component\HttpKernel\HttpKernelBrowser;
 
 /**
  * Symfony2 BrowserKit driver.
@@ -46,15 +46,15 @@ class BrowserKitDriver extends CoreDriver
     /**
      * Initializes BrowserKit driver.
      *
-     * @param Client      $client  BrowserKit client instance
+     * @param AbstractBrowser      $client  BrowserKit client instance
      * @param string|null $baseUrl Base URL for HttpKernel clients
      */
-    public function __construct(Client $client, $baseUrl = null)
+    public function __construct(AbstractBrowser $client, $baseUrl = null)
     {
         $this->client = $client;
         $this->client->followRedirects(true);
 
-        if ($baseUrl !== null && $client instanceof HttpKernelClient) {
+        if ($baseUrl !== null && $client instanceof HttpKernelBrowser) {
             $client->setServerParameter('SCRIPT_FILENAME', parse_url($baseUrl, PHP_URL_PATH));
         }
     }
@@ -62,7 +62,7 @@ class BrowserKitDriver extends CoreDriver
     /**
      * Returns BrowserKit HTTP client instance.
      *
-     * @return Client
+     * @return AbstractBrowser
      */
     public function getClient()
     {
@@ -316,10 +316,10 @@ class BrowserKitDriver extends CoreDriver
 
         // BC layer for Symfony < 4.3
         if (!method_exists($response, 'getStatusCode')) {
-            return $response->getStatus();
+            return $this->getResponse()->getStatus();
         }
 
-        return $response->getStatusCode();
+        return $this->getResponse()->getStatusCode();
     }
 
     /**
@@ -358,8 +358,7 @@ class BrowserKitDriver extends CoreDriver
      */
     public function getText($xpath)
     {
-        $text = $this->getFilteredCrawler($xpath)->text(null, true);
-        // TODO drop our own normalization once supporting only dom-crawler 4.4+ as it already does it.
+        $text = $this->getFilteredCrawler($xpath)->text();
         $text = str_replace("\n", ' ', $text);
         $text = preg_replace('/ {2,}/', ' ', $text);
 
@@ -371,7 +370,8 @@ class BrowserKitDriver extends CoreDriver
      */
     public function getHtml($xpath)
     {
-        return $this->getFilteredCrawler($xpath)->html();
+        // cut the tag itself (making innerHTML out of outerHTML)
+        return preg_replace('/^\<[^\>]+\>|\<[^\>]+\>$/', '', $this->getOuterHtml($xpath));
     }
 
     /**
@@ -379,13 +379,7 @@ class BrowserKitDriver extends CoreDriver
      */
     public function getOuterHtml($xpath)
     {
-        $crawler = $this->getFilteredCrawler($xpath);
-
-        if (method_exists($crawler, 'outerHtml')) {
-            return $crawler->outerHtml();
-        }
-
-        $node = $this->getCrawlerNode($crawler);
+        $node = $this->getCrawlerNode($this->getFilteredCrawler($xpath));
 
         return $node->ownerDocument->saveHTML($node);
     }
@@ -425,15 +419,7 @@ class BrowserKitDriver extends CoreDriver
             return $this->getAttribute($xpath, 'value');
         }
 
-        $value = $field->getValue();
-
-        if ('select' === $node->tagName && null === $value) {
-            // symfony/dom-crawler returns null as value for a non-multiple select without
-            // options but we want an empty string to match browsers.
-            $value = '';
-        }
-
-        return $value;
+        return $field->getValue();
     }
 
     /**
@@ -730,7 +716,7 @@ class BrowserKitDriver extends CoreDriver
             }
         }
 
-        $this->client->submit($form, array(), $this->serverParameters);
+        $this->client->submit($form);
 
         $this->forms = array();
     }
@@ -888,9 +874,13 @@ class BrowserKitDriver extends CoreDriver
      */
     private function getCrawler()
     {
-        $crawler = $this->client->getCrawler();
+        try {
+            $crawler = $this->client->getCrawler();
 
-        if (null === $crawler) {
+            if (null === $crawler) {
+                throw new DriverException('Unable to access the response content before visiting a page');
+            }
+        } catch (BadMethodCallException $exception) {
             throw new DriverException('Unable to access the response content before visiting a page');
         }
 

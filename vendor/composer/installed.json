@@ -117,65 +117,6 @@
         ]
     },
     {
-        "name": "behat/mink-browserkit-driver",
-        "version": "v1.3.4",
-        "version_normalized": "1.3.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/minkphp/MinkBrowserKitDriver.git",
-            "reference": "e3b90840022ebcd544c7b394a3c9597ae242cbee"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/e3b90840022ebcd544c7b394a3c9597ae242cbee",
-            "reference": "e3b90840022ebcd544c7b394a3c9597ae242cbee",
-            "shasum": ""
-        },
-        "require": {
-            "behat/mink": "^1.7.1@dev",
-            "php": ">=5.3.6",
-            "symfony/browser-kit": "~2.3|~3.0|~4.0",
-            "symfony/dom-crawler": "~2.3|~3.0|~4.0"
-        },
-        "require-dev": {
-            "mink/driver-testsuite": "dev-master",
-            "symfony/debug": "^2.7|^3.0|^4.0",
-            "symfony/http-kernel": "~2.3|~3.0|~4.0"
-        },
-        "time": "2020-03-11T09:49:45+00:00",
-        "type": "mink-driver",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.3.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Behat\\Mink\\Driver\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Konstantin Kudryashov",
-                "email": "ever.zet@gmail.com",
-                "homepage": "http://everzet.com"
-            }
-        ],
-        "description": "Symfony2 BrowserKit driver for Mink framework",
-        "homepage": "http://mink.behat.org/",
-        "keywords": [
-            "Mink",
-            "Symfony2",
-            "browser",
-            "testing"
-        ]
-    },
-    {
         "name": "behat/mink-goutte-driver",
         "version": "v1.2.1",
         "version_normalized": "1.2.1.0",
@@ -2885,17 +2826,17 @@
     },
     {
         "name": "drupal/core-dev",
-        "version": "9.1.10",
-        "version_normalized": "9.1.10.0",
+        "version": "9.2.0",
+        "version_normalized": "9.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-dev.git",
-            "reference": "559e6611014b0815c61b8004598854617d541d97"
+            "reference": "4b5b8556711315e180d72830733ddb07a57a2d73"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/drupal/core-dev/zipball/559e6611014b0815c61b8004598854617d541d97",
-            "reference": "559e6611014b0815c61b8004598854617d541d97",
+            "url": "https://api.github.com/repos/drupal/core-dev/zipball/4b5b8556711315e180d72830733ddb07a57a2d73",
+            "reference": "4b5b8556711315e180d72830733ddb07a57a2d73",
             "shasum": ""
         },
         "require": {
@@ -2903,12 +2844,15 @@
             "behat/mink-goutte-driver": "^1.2",
             "behat/mink-selenium2-driver": "^1.4",
             "composer/composer": "^2.0.2",
-            "drupal/coder": "^8.3.7",
+            "drupal/coder": "^8.3.10",
             "easyrdf/easyrdf": "^0.9 || ^1.0",
+            "fabpot/goutte": "^3.3",
+            "friends-of-behat/mink-browserkit-driver": "^1.4",
+            "instaclick/php-webdriver": "^1.4.1",
             "justinrainbow/json-schema": "^5.2",
             "mikey179/vfsstream": "^1.6.8",
-            "phpspec/prophecy": "^1.7",
-            "phpunit/phpunit": "^8.4.1 || ^9",
+            "phpspec/prophecy": "^1.12",
+            "phpunit/phpunit": "^8.5.14 || ^9",
             "symfony/browser-kit": "^4.4",
             "symfony/css-selector": "^4.4",
             "symfony/dom-crawler": "^4.4 !=4.4.5",
@@ -2916,13 +2860,13 @@
             "symfony/filesystem": "^4.4",
             "symfony/finder": "^4.4",
             "symfony/lock": "^4.4",
-            "symfony/phpunit-bridge": "^5.1.4",
-            "symfony/var-dumper": "^5.1.2"
+            "symfony/phpunit-bridge": "^5.3.0",
+            "symfony/var-dumper": "^5.3.0"
         },
         "conflict": {
             "webflo/drupal-core-require-dev": "*"
         },
-        "time": "2020-10-28T08:13:15+00:00",
+        "time": "2021-06-01T16:41:50+00:00",
         "type": "metapackage",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -5860,6 +5804,67 @@
         ]
     },
     {
+        "name": "friends-of-behat/mink-browserkit-driver",
+        "version": "v1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfBehat/MinkBrowserKitDriver.git",
+            "reference": "8110b99ed1ac2b50ad287280bfc20e08f58b6cc6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfBehat/MinkBrowserKitDriver/zipball/8110b99ed1ac2b50ad287280bfc20e08f58b6cc6",
+            "reference": "8110b99ed1ac2b50ad287280bfc20e08f58b6cc6",
+            "shasum": ""
+        },
+        "require": {
+            "behat/mink": "^1.7",
+            "php": "^7.2|^8.0",
+            "symfony/browser-kit": "^4.4|^5.0",
+            "symfony/dom-crawler": "^4.4|^5.0"
+        },
+        "replace": {
+            "behat/mink-browserkit-driver": "self.version"
+        },
+        "require-dev": {
+            "friends-of-behat/mink-driver-testsuite": "dev-master",
+            "symfony/http-kernel": "^4.4|^5.0"
+        },
+        "time": "2021-02-04T14:39:46+00:00",
+        "type": "mink-driver",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Behat\\Mink\\Driver\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Konstantin Kudryashov",
+                "email": "ever.zet@gmail.com",
+                "homepage": "http://everzet.com"
+            }
+        ],
+        "description": "Symfony2 BrowserKit driver for Mink framework",
+        "homepage": "http://mink.behat.org/",
+        "keywords": [
+            "Mink",
+            "Symfony2",
+            "browser",
+            "testing"
+        ]
+    },
+    {
         "name": "grasmash/expander",
         "version": "1.0.0",
         "version_normalized": "1.0.0.0",
@@ -7541,17 +7546,17 @@
     },
     {
         "name": "phpmailer/phpmailer",
-        "version": "v6.4.1",
-        "version_normalized": "6.4.1.0",
+        "version": "v6.5.0",
+        "version_normalized": "6.5.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/PHPMailer/PHPMailer.git",
-            "reference": "9256f12d8fb0cd0500f93b19e18c356906cbed3d"
+            "reference": "a5b5c43e50b7fba655f793ad27303cd74c57363c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/9256f12d8fb0cd0500f93b19e18c356906cbed3d",
-            "reference": "9256f12d8fb0cd0500f93b19e18c356906cbed3d",
+            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a5b5c43e50b7fba655f793ad27303cd74c57363c",
+            "reference": "a5b5c43e50b7fba655f793ad27303cd74c57363c",
             "shasum": ""
         },
         "require": {
@@ -7576,7 +7581,7 @@
             "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
             "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
         },
-        "time": "2021-04-29T12:25:04+00:00",
+        "time": "2021-06-16T14:33:43+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -9540,17 +9545,17 @@
     },
     {
         "name": "sirbrillig/phpcs-variable-analysis",
-        "version": "v2.11.0",
-        "version_normalized": "2.11.0.0",
+        "version": "v2.11.1",
+        "version_normalized": "2.11.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-            "reference": "e76e816236f401458dd8e16beecab905861b5867"
+            "reference": "9df9ade5961a3505d0d24b0e6be2ab82e335f753"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/e76e816236f401458dd8e16beecab905861b5867",
-            "reference": "e76e816236f401458dd8e16beecab905861b5867",
+            "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/9df9ade5961a3505d0d24b0e6be2ab82e335f753",
+            "reference": "9df9ade5961a3505d0d24b0e6be2ab82e335f753",
             "shasum": ""
         },
         "require": {
@@ -9564,7 +9569,7 @@
             "phpunit/phpunit": "^5.0 || ^6.5 || ^7.0 || ^8.0",
             "sirbrillig/phpcs-import-detection": "^1.1"
         },
-        "time": "2021-03-09T22:32:14+00:00",
+        "time": "2021-06-18T20:54:59+00:00",
         "type": "phpcodesniffer-standard",
         "installation-source": "dist",
         "autoload": {
