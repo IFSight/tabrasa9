@@ -54,7 +54,7 @@
         "drupal/social_media_links": "^2.8",
         "drupal/token": "^1.9",
         "drupal/twig_tweak": "^3.0",
-        "drupal/ultimate_cron": "@alpha",
+        "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^10.4",
         "ifsight/fulcrum_whitelist": "1.1.0",
