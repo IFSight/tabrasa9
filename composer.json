@@ -22,7 +22,7 @@
         "drupal/config_ignore": "^2.3",
         "drupal/config_split": "@beta",
         "drupal/core-composer-scaffold": "^9.2",
-        "drupal/core-project-message": "^9.1",
+        "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/crop": "^2.1",
         "drupal/ctools": "^3.4",
