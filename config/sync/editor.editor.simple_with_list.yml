@@ -1,0 +1,40 @@
+uuid: 382a4b3a-8806-4404-96ff-c59819a19988
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.simple_with_list
+  module:
+    - ckeditor
+format: simple_with_list
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+  plugins:
+    drupallink:
+      linkit_enabled: false
+      linkit_profile: ''
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

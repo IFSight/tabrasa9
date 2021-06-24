@@ -3055,6 +3055,65 @@
         "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
     },
     {
+        "name": "drupal/crop",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/crop.git",
+            "reference": "8.x-2.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/crop-8.x-2.1.zip",
+            "reference": "8.x-2.1",
+            "shasum": "c03541907d59874ca8a81f574258f6c0de8cbdc8"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-2.1",
+                "datestamp": "1585251827",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Drupal Media Team",
+                "homepage": "https://www.drupal.org/user/3260690"
+            },
+            {
+                "name": "phenaproxima",
+                "homepage": "https://www.drupal.org/user/205645"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            },
+            {
+                "name": "woprrr",
+                "homepage": "https://www.drupal.org/user/858604"
+            }
+        ],
+        "description": "Provides storage and API for image crops.",
+        "homepage": "https://www.drupal.org/project/crop",
+        "support": {
+            "source": "https://git.drupalcode.org/project/crop",
+            "issues": "https://www.drupal.org/project/issues/crop"
+        }
+    },
+    {
         "name": "drupal/ctools",
         "version": "3.6.0",
         "version_normalized": "3.6.0.0",
@@ -3766,6 +3825,123 @@
         }
     },
     {
+        "name": "drupal/focal_point",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/focal_point.git",
+            "reference": "8.x-1.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.5.zip",
+            "reference": "8.x-1.5",
+            "shasum": "41198e9220788c3b7d3146b10e5dfd6c73cd4784"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9",
+            "drupal/crop": "^1.0 || ^2.0"
+        },
+        "require-dev": {
+            "drupal/crop": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.5",
+                "datestamp": "1598663903",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Alexander Ross (bleen)",
+                "homepage": "https://www.drupal.org/u/bleen",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Focal Point allows content creators to mark the most important part of an image for easier cropping.",
+        "homepage": "https://drupal.org/project/focal_point",
+        "support": {
+            "source": "https://cgit.drupalcode.org/focal_point",
+            "issues": "https://drupal.org/project/issues/focal_point",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
+        "name": "drupal/fontawesome",
+        "version": "2.19.0",
+        "version_normalized": "2.19.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/fontawesome.git",
+            "reference": "8.x-2.19"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/fontawesome-8.x-2.19.zip",
+            "reference": "8.x-2.19",
+            "shasum": "7b921a80f0811d8dcfb0c390157506cd5724a037"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-2.19",
+                "datestamp": "1623794225",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Daniel.Moberly",
+                "homepage": "https://www.drupal.org/user/1160788"
+            },
+            {
+                "name": "RobLoach",
+                "homepage": "https://www.drupal.org/user/61114"
+            },
+            {
+                "name": "inders",
+                "homepage": "https://www.drupal.org/user/127640"
+            },
+            {
+                "name": "truls1502",
+                "homepage": "https://www.drupal.org/user/325866"
+            }
+        ],
+        "description": "The web's most popular icon set and toolkit.",
+        "homepage": "https://www.drupal.org/project/fontawesome",
+        "support": {
+            "source": "https://git.drupalcode.org/project/fontawesome",
+            "issues": "https://drupal.org/project/issues/fontawesome"
+        }
+    },
+    {
         "name": "drupal/jquery_ui",
         "version": "1.4.0",
         "version_normalized": "1.4.0.0",
@@ -4273,6 +4449,57 @@
         }
     },
     {
+        "name": "drupal/module_filter",
+        "version": "3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/module_filter.git",
+            "reference": "8.x-3.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/module_filter-8.x-3.2.zip",
+            "reference": "8.x-3.2",
+            "shasum": "b5c1a5141da392340232a1ad0934b921b862e1f4"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-3.2",
+                "datestamp": "1614918371",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "andrey.troeglazov",
+                "homepage": "https://www.drupal.org/user/3145389"
+            },
+            {
+                "name": "greenSkin",
+                "homepage": "https://www.drupal.org/user/173855"
+            }
+        ],
+        "description": "Filter the modules list.",
+        "homepage": "http://drupal.org/project/module_filter",
+        "support": {
+            "source": "https://git.drupalcode.org/project/module_filter",
+            "issues": "https://www.drupal.org/project/issues/module_filter"
+        }
+    },
+    {
         "name": "drupal/paragraphs",
         "version": "1.12.0",
         "version_normalized": "1.12.0.0",
@@ -4718,6 +4945,65 @@
         "support": {
             "source": "https://git.drupalcode.org/project/scheduler",
             "issues": "https://www.drupal.org/project/issues/scheduler"
+        }
+    },
+    {
+        "name": "drupal/scheduler_content_moderation_integration",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/scheduler_content_moderation_integration.git",
+            "reference": "8.x-1.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/scheduler_content_moderation_integration-8.x-1.3.zip",
+            "reference": "8.x-1.3",
+            "shasum": "27df8713893f6418c99e5d99f2fa9b5dd66fc048"
+        },
+        "require": {
+            "drupal/core": "^8.7.7 || ^9",
+            "drupal/scheduler": "^1.1"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.3",
+                "datestamp": "1591179040",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "chr.fritsch",
+                "homepage": "https://www.drupal.org/user/2103716"
+            },
+            {
+                "name": "daniel.bosen",
+                "homepage": "https://www.drupal.org/user/404865"
+            },
+            {
+                "name": "thunderbot",
+                "homepage": "https://www.drupal.org/user/3511180"
+            },
+            {
+                "name": "volkerk",
+                "homepage": "https://www.drupal.org/user/57527"
+            }
+        ],
+        "description": "Scheduler Content Moderation Integration",
+        "homepage": "https://www.drupal.org/project/scheduler_content_moderation_integration",
+        "support": {
+            "source": "https://git.drupalcode.org/project/scheduler_content_moderation_integration"
         }
     },
     {
@@ -5910,14 +6196,17 @@
     },
     {
         "name": "ifsight/paladin",
-        "version": "v9.0.x-dev",
-        "version_normalized": "9.0.9999999.9999999-dev",
+        "version": "9.1.x-dev",
+        "version_normalized": "9.1.9999999.9999999-dev",
         "source": {
             "type": "git",
             "url": "git@git.ifsight.net:proj/contrib/if-paladin-theme.git",
-            "reference": "c3a4a50e0940a974b75b63598b642ba2500b07fb"
+            "reference": "3fb3c5a8f18dbbcb8bb0e8b6e20e5e8d6afd2477"
         },
-        "time": "2021-06-09T22:49:03+00:00",
+        "require": {
+            "drupal/core": "^8.8.0|^9.0"
+        },
+        "time": "2021-06-18T00:15:05+00:00",
         "type": "drupal-theme",
         "installation-source": "source",
         "license": [
@@ -8987,7 +9276,8 @@
                 "url": "https://github.com/sebastianbergmann",
                 "type": "github"
             }
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "sebastian/type",
