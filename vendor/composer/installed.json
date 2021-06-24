@@ -2836,8 +2836,8 @@
     },
     {
         "name": "drupal/core-composer-scaffold",
-        "version": "9.1.10",
-        "version_normalized": "9.1.10.0",
+        "version": "9.2.0",
+        "version_normalized": "9.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-composer-scaffold.git",

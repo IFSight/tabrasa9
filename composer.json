@@ -21,7 +21,7 @@
         "drupal/config_filter": "^2.2",
         "drupal/config_ignore": "^2.3",
         "drupal/config_split": "@beta",
-        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.2",
         "drupal/crop": "^2.1",
