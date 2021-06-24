@@ -25,7 +25,7 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/crop": "^2.1",
-        "drupal/ctools": "^3.4",
+        "drupal/ctools": "^3.7",
         "drupal/date_popup": "^1.1",
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/entity": "^1.2",
