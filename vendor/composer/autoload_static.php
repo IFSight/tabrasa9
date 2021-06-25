@@ -8,8 +8,8 @@ class ComposerStaticInitb88c53f292e090ac89345da83afcb713
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
@@ -124,6 +124,7 @@ class ComposerStaticInitb88c53f292e090ac89345da83afcb713
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
             'PHPMailer\\PHPMailer\\' => 20,
@@ -431,6 +432,10 @@ class ComposerStaticInitb88c53f292e090ac89345da83afcb713
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
@@ -641,9 +646,9 @@ class ComposerStaticInitb88c53f292e090ac89345da83afcb713
         ),
         'Behat\\Mink\\Driver\\' => 
         array (
-            0 => __DIR__ . '/..' . '/behat/mink-browserkit-driver/src',
-            1 => __DIR__ . '/..' . '/behat/mink-goutte-driver/src',
-            2 => __DIR__ . '/..' . '/behat/mink-selenium2-driver/src',
+            0 => __DIR__ . '/..' . '/behat/mink-goutte-driver/src',
+            1 => __DIR__ . '/..' . '/behat/mink-selenium2-driver/src',
+            2 => __DIR__ . '/..' . '/friends-of-behat/mink-browserkit-driver/src',
         ),
         'Behat\\Mink\\' => 
         array (
@@ -737,6 +742,7 @@ class ComposerStaticInitb88c53f292e090ac89345da83afcb713
         'Drupal\\Core\\DependencyInjection\\Container' => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Core/DependencyInjection/Container.php',
         'Drupal\\Core\\DrupalKernel' => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Core/DrupalKernel.php',
         'Drupal\\Core\\DrupalKernelInterface' => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Core/DrupalKernelInterface.php',
+        'Drupal\\Core\\Http\\InputBag' => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Core/Http/InputBag.php',
         'Drupal\\Core\\Installer\\InstallerRedirectTrait' => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Core/Installer/InstallerRedirectTrait.php',
         'Drupal\\Core\\Site\\Settings' => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Core/Site/Settings.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
@@ -1342,8 +1348,10 @@ class ComposerStaticInitb88c53f292e090ac89345da83afcb713
         'SebastianBergmann\\Timer\\Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'SebastianBergmann\\Type\\CallableType' => __DIR__ . '/..' . '/sebastian/type/src/CallableType.php',
         'SebastianBergmann\\Type\\Exception' => __DIR__ . '/..' . '/sebastian/type/src/exception/Exception.php',
+        'SebastianBergmann\\Type\\FalseType' => __DIR__ . '/..' . '/sebastian/type/src/FalseType.php',
         'SebastianBergmann\\Type\\GenericObjectType' => __DIR__ . '/..' . '/sebastian/type/src/GenericObjectType.php',
         'SebastianBergmann\\Type\\IterableType' => __DIR__ . '/..' . '/sebastian/type/src/IterableType.php',
+        'SebastianBergmann\\Type\\LogicException' => __DIR__ . '/..' . '/sebastian/type/src/exception/LogicException.php',
         'SebastianBergmann\\Type\\MixedType' => __DIR__ . '/..' . '/sebastian/type/src/MixedType.php',
         'SebastianBergmann\\Type\\NullType' => __DIR__ . '/..' . '/sebastian/type/src/NullType.php',
         'SebastianBergmann\\Type\\ObjectType' => __DIR__ . '/..' . '/sebastian/type/src/ObjectType.php',
