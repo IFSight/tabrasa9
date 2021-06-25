@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb0bbe6431984cf039ab80aa3c368ddc",
+    "content-hash": "50eca42f5f5b6172aa51edbbc868ccc8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1427,17 +1427,17 @@
         },
         {
             "name": "drupal/better_exposed_filters",
-            "version": "5.0.0-beta1",
+            "version": "5.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "8.x-5.0-beta1"
+                "reference": "8.x-5.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-5.0-beta1.zip",
-                "reference": "8.x-5.0-beta1",
-                "shasum": "bc5ce873fa699ee584fdeb2fd28ad6c5cb456b03"
+                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-5.0-beta2.zip",
+                "reference": "8.x-5.0-beta2",
+                "shasum": "3899191ee3fa383abe0162cc6701ddba86bae252"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -1449,8 +1449,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.0-beta1",
-                    "datestamp": "1594141892",
+                    "version": "8.x-5.0-beta2",
+                    "datestamp": "1624554647",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -1459,7 +1459,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1471,8 +1471,8 @@
                     "homepage": "https://www.drupal.org/u/etroid"
                 },
                 {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto"
                 },
                 {
                     "name": "jkopel",
@@ -5117,7 +5117,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.ifsight.net:proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git",
-                "reference": "26560df951af6b0877e20cf425181c00080fb32b"
+                "reference": "ae7cdf8ddcf06519e666a6eb259b387f503e605a"
             },
             "require": {
                 "drupal/core": "^8.8.0|^9.0"
@@ -5135,7 +5135,7 @@
                 "issues": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8/issues",
                 "source": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git"
             },
-            "time": "2021-06-18T00:20:50+00:00"
+            "time": "2021-06-24T20:33:50+00:00"
         },
         {
             "name": "ifsight/if_admin",
