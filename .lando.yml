@@ -48,10 +48,6 @@ services:
       password: drupal
       database: drupal_subsite
 
-events:
-  post-start:
-    - lando disable-xdebug
-
 excludes:
   - vendor
   - docroot/modules/contrib
