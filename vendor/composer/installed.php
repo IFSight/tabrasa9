@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '4e21be6de6d3f83098a7fb4c846d0dec3fdb342d',
+        'reference' => 'ab19c4fe696924a873a321a04b05006ffaa396b4',
         'name' => 'ifsight/tabrasa9',
         'dev' => true,
     ),
@@ -1472,12 +1472,12 @@
             'dev_requirement' => false,
         ),
         'ifsight/fulcrum_whitelist' => array(
-            'pretty_version' => '1.1.0',
-            'version' => '1.1.0.0',
+            'pretty_version' => 'v9.0.x-dev',
+            'version' => '9.0.9999999.9999999-dev',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../docroot/modules/contrib/fulcrum_whitelist',
             'aliases' => array(),
-            'reference' => '1.1.0',
+            'reference' => '26560df951af6b0877e20cf425181c00080fb32b',
             'dev_requirement' => false,
         ),
         'ifsight/if_admin' => array(
@@ -1522,7 +1522,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '4e21be6de6d3f83098a7fb4c846d0dec3fdb342d',
+            'reference' => 'ab19c4fe696924a873a321a04b05006ffaa396b4',
             'dev_requirement' => false,
         ),
         'instaclick/php-webdriver' => array(
