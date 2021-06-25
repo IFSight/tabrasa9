@@ -1,0 +1,31 @@
+uuid: d3a89982-1c7f-4cc2-806a-074e607676b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: default
+label: Default
+description: 'The default linkit profile. Contains both content types and media types available for search.'
+matchers:
+  abc3ee6f-d8dc-452d-89fd-0befc44ae6eb:
+    uuid: abc3ee6f-d8dc-452d-89fd-0befc44ae6eb
+    id: 'entity:node'
+    weight: 0
+    settings:
+      include_unpublished: false
+      metadata: '[node:url]'
+      bundles: {  }
+      group_by_bundle: true
+      substitution_type: canonical
+      limit: 50
+  c55c9554-bc6c-426c-8493-23bbf29ae53e:
+    uuid: c55c9554-bc6c-426c-8493-23bbf29ae53e
+    id: 'entity:media'
+    weight: 0
+    settings:
+      metadata: '[media:url]'
+      bundles: {  }
+      group_by_bundle: true
+      substitution_type: media
+      limit: 50

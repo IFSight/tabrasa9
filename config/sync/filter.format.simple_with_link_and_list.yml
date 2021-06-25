@@ -1,0 +1,33 @@
+uuid: a4ed9a14-24c8-46d9-807e-ed7beab33d07
+langcode: en
+status: true
+dependencies:
+  module:
+    - linkit
+    - media
+name: 'Simple with Link and List'
+format: simple_with_link_and_list
+weight: -5
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<p> <br> <em> <strong> <ul type> <ol start type> <li> <a href hreflang data-entity-substitution data-entity-type data-entity-uuid title>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true

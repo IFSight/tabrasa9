@@ -16,15 +16,22 @@ mode: default
 content:
   field_media_oembed_video:
     type: oembed
-    weight: 0
-    label: hidden
+    weight: 1
+    label: visually_hidden
     settings:
       max_width: 0
       max_height: 0
     third_party_settings: {  }
     region: content
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   created: true
-  name: true
   thumbnail: true
   uid: true

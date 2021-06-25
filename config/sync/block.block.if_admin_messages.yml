@@ -1,0 +1,22 @@
+uuid: e55e7f7f-75af-44d4-a2d8-0259f0d09caf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - if_admin
+_core:
+  default_config_hash: LWUQcJE6RJo39QeCtt00vOT9lUmfEarV-kHEQ5cXSh4
+id: if_admin_messages
+theme: if_admin
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

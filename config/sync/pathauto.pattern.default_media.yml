@@ -1,0 +1,14 @@
+uuid: d8ee01f8-d90f-42e7-bed4-82c08eb1fefb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: default_media
+label: 'Default Media (keep at bottom)'
+type: 'canonical_entities:media'
+pattern: '/media/[media:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: -10
+relationships: {  }

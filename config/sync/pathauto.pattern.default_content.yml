@@ -1,0 +1,14 @@
+uuid: 5f551f63-f4a9-4c7b-a8c4-46247615d069
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: default_content
+label: 'Default Content (keep at bottom)'
+type: 'canonical_entities:node'
+pattern: '/[node:menu-link:parent:url:path]/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: -9
+relationships: {  }
