@@ -1,0 +1,27 @@
+uuid: f75ed1e6-8f2d-4a2f-9cf7-fe9e9944dd68
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - if_admin
+_core:
+  default_config_hash: x-zJ2Tqb2dVGwHHrncA5JuwmvYLim3i-VJah7w7wAC4
+id: if_admin_secondary_navigation
+theme: if_admin
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Secondary navigation'
+  provider: system
+  label_display: '0'
+  level: 2
+  depth: 0
+  expand_all_items: false
+visibility: {  }

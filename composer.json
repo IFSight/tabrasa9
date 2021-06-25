@@ -58,7 +58,7 @@
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^10.4",
         "ifsight/fulcrum_whitelist": "1.1.0",
-        "ifsight/if_admin": "0.1",
+        "ifsight/if_admin": "v9.1.x-dev",
         "ifsight/if_helper": "0.1",
         "ifsight/if_varnish_purge_tags": "0.2",
         "ifsight/paladin": "v9.1.x-dev",
@@ -74,7 +74,7 @@
         "sort-packages": true
     },
     "scripts": {
-        "require-sub-modules": "echo 'Deleting docroot .git folders so the code is visible.'; ( find ./docroot -type d -name '.git' ) | xargs -0 rm -rf",
+        "require-sub-modules": "echo 'Deleting docroot .git folders so the code is visible.'; find docroot \\( -name '.git' \\) -exec rm -rf -- {} +",
         "post-package-install": "@require-sub-modules",
         "post-update-cmd": "@require-sub-modules"
     },
@@ -184,17 +184,8 @@
             }
         },
         {
-            "type": "package",
-            "package": {
-                "name": "ifsight/if_admin",
-                "version": "0.1",
-                "type": "drupal-theme",
-                "source": {
-                    "url": "git@git.ifsight.net:proj/contrib/if-admin-theme.git",
-                    "type": "git",
-                    "reference": "v0.1"
-                }
-            }
+            "type": "vcs",
+            "url": "git@git.ifsight.net:proj/contrib/if-admin-theme.git"
         }
     ],
     "require-dev": {
