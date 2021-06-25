@@ -118,6 +118,12 @@
                 "type:drupal-custom-theme"
             ]
         },
+        "patches": {
+          "drupal/field_group": {
+            "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-02-17/field_group-HTML5_validation_prevents_submission_in_tabs-2969051-31.patch",
+            "Ensure visibility of invalid fields (serverside)": "https://www.drupal.org/files/issues/2021-02-23/field_group-open-groups-with-errors-server-side-2894213-20.patch"
+          }
+        },
         "drupal-core-project-message": {
             "include-keys": [
                 "homepage",

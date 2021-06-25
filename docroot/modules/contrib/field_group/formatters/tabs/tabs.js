@@ -43,4 +43,25 @@
     }
   };
 
+  Drupal.behaviors.showTabWithError = {
+    attach: function (context, settings) {
+      if (typeof $('<input>')[0].checkValidity == 'function') { // Check if browser supports HTML5 validation
+        $('.form-submit:not([formnovalidate])').once('showTabWithError').on('click', function() { // Can't use .submit() because HTML validation prevents it from running
+          var $this = $(this),
+              $form = $this.closest('form'); // Get form of the submit button
+
+          if (typeof $form[0] !== 'undefined') {
+            $($form[0].elements).each(function () {
+              if (this.checkValidity && !this.checkValidity()) { // First check for details element
+                var id = $(this).closest('.field-group-tab').attr('id'); // Get wrapper's id
+                $('[href="#' + id + '"]').click(); // Click menu item with id
+                return false; // Break loop after first error
+              }
+            });
+          }
+        });
+      }
+    }
+  };
+
 })(jQuery, Modernizr);
