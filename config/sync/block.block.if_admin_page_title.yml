@@ -9,7 +9,7 @@ _core:
 id: if_admin_page_title
 theme: if_admin
 region: header
-weight: -50
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
