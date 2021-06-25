@@ -763,6 +763,19 @@ $settings['entity_update_backup'] = TRUE;
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 /**
+ * Load host configurations, if available.
+ *
+ * Import the settings provided by host for local, DEV, TEST, TRAIN or PROD
+ * environments. This ensures we have configurations needed for the current
+ * environment such as SMTP hosts or passwords, disabled modules and so on.
+ *
+ * Keep this code block at the end of this file to take full effect.
+ */
+if (function_exists('fulcrum_config')) {
+  fulcrum_config('pre', $settings, $databases);
+}
+
+/**
  * Load local development override configuration, if available.
  *
  * Create a settings.local.php file to override variables on secondary (staging,
@@ -779,14 +792,6 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'drupal9',
-  'username' => 'drupal9',
-  'password' => 'drupal9',
-  'prefix' => '',
-  'host' => 'database',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['config_sync_directory'] = '../config/sync';
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
