@@ -255,6 +255,7 @@ function field_group_form_alter(array &$form, FormStateInterface $form_state) {
 
       field_group_attach_groups($form, $context);
       $form['#process'][] = [FormatterHelper::class, 'formProcess'];
+      $form['#pre_render'][] = [FormatterHelper::class, 'formGroupPreRender'];
     }
   }
 
@@ -342,17 +343,15 @@ function field_group_entity_view_alter(&$build, EntityInterface $entity, EntityD
 }
 
 /**
- * Pre render callback for rendering groups.
+ * Pre render callback for rendering groups in forms.
  *
  * @param array $element
  *   Form that is being rendered.
  *
- * @deprecated Use field_group_form_process instead.
- *
  * @return array
  */
 function field_group_form_pre_render(array $element) {
-  return field_group_form_process($element);
+  return FormatterHelper::formGroupPreRender($element);
 }
 
 /**

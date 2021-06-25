@@ -10,8 +10,8 @@ _core:
   default_config_hash: zqQW-cCLELp537tLXoT5ppzkCSUJeoO8u4E6IpC1Ang
 id: if_admin_breadcrumbs
 theme: if_admin
-region: header
-weight: 0
+region: breadcrumb
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

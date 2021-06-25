@@ -9,7 +9,7 @@ _core:
 id: paladin_local_tasks
 theme: paladin
 region: content
-weight: -40
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

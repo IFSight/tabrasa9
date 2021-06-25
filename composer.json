@@ -38,6 +38,7 @@
         "drupal/fontawesome": "^2.19",
         "drupal/linkit": "^6.0@beta",
         "drupal/mailsystem": "^4.3",
+        "drupal/masquerade": "^2.0@beta",
         "drupal/menu_block": "^1.6",
         "drupal/metatag": "^1.16",
         "drupal/module_filter": "^3.2",
@@ -116,6 +117,12 @@
             "docroot/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
+        },
+        "patches": {
+          "drupal/field_group": {
+            "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-02-17/field_group-HTML5_validation_prevents_submission_in_tabs-2969051-31.patch",
+            "Ensure visibility of invalid fields (serverside)": "https://www.drupal.org/files/issues/2021-02-23/field_group-open-groups-with-errors-server-side-2894213-20.patch"
+          }
         },
         "drupal-core-project-message": {
             "include-keys": [

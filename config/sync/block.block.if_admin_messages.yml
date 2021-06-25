@@ -10,8 +10,8 @@ _core:
   default_config_hash: LWUQcJE6RJo39QeCtt00vOT9lUmfEarV-kHEQ5cXSh4
 id: if_admin_messages
 theme: if_admin
-region: header
-weight: 0
+region: highlighted
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:
