@@ -43,6 +43,7 @@ module:
   fulcrum_whitelist: 0
   help: 0
   history: 0
+  if_varnish_purge_tags: 0
   image: 0
   link: 0
   linkit: 0
