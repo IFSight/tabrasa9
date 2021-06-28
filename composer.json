@@ -36,6 +36,7 @@
         "drupal/field_group": "^3.1",
         "drupal/focal_point": "^1.5",
         "drupal/fontawesome": "^2.19",
+        "drupal/jquery_ui_accordion": "^1.1",
         "drupal/linkit": "^6.0@beta",
         "drupal/mailsystem": "^4.3",
         "drupal/masquerade": "^2.0@beta",
