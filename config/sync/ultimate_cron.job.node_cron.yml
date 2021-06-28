@@ -1,10 +1,10 @@
-uuid: 202f6f74-61d4-4ee1-a131-328d95bc8f46
+uuid: 65e8c2a5-1d65-40ee-a1a7-36ddd0096765
 langcode: en
 status: true
 dependencies:
   module:
     - node
-title: 'Mark old nodes as read'
+title: 'Updates search rankings for nodes'
 id: node_cron
 weight: 0
 module: node
