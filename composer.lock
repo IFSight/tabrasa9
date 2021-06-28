@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7abf9b9137d7ced37a513a36919b8e21",
+    "content-hash": "312136810d348f3cde5822b3e82cdcd8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5315,6 +5315,32 @@
                 "source": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git"
             },
             "time": "2021-06-24T20:33:50+00:00"
+        },
+        {
+            "name": "ifsight/if_admin",
+            "version": "9.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@git.ifsight.net:proj/contrib/if-admin-theme.git",
+                "reference": "54e413adf38037cc7c0e0cc47841cb690d4d791a"
+            },
+            "require": {
+                "drupal/core": "^8.8.0|^9.0"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "IF Admin is an enhanced Drupal admin theme",
+            "homepage": "http://git.ifsight.com/proj/contrib/if-admin-theme",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "http://git.ifsight.net/proj/contrib/if-admin-theme/issues",
+                "source": "http://git.ifsight.com/proj/contrib/if-admin-theme"
+            },
+            "time": "2021-06-22T18:49:10+00:00"
         },
         {
             "name": "ifsight/if_helper",
@@ -12795,6 +12821,7 @@
         "drupal/masquerade": 10,
         "drupal/ultimate_cron": 15,
         "ifsight/fulcrum_whitelist": 20,
+        "ifsight/if_admin": 20,
         "ifsight/if_helper": 20,
         "ifsight/if_varnish_purge_tags": 20,
         "ifsight/paladin": 20

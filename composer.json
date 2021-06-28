@@ -59,6 +59,7 @@
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^10.4",
         "ifsight/fulcrum_whitelist": "^9.1.x-dev",
+        "ifsight/if_admin": "9.1.x-dev",
         "ifsight/if_helper": "^9.1.x-dev",
         "ifsight/if_varnish_purge_tags": "^9.1.x-dev",
         "ifsight/paladin": "9.1.x-dev",
