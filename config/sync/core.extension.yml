@@ -44,6 +44,7 @@ module:
   fulcrum_whitelist: 0
   help: 0
   history: 0
+  if_helper: 0
   image: 0
   jquery_ui: 0
   jquery_ui_datepicker: 0

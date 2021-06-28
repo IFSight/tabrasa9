@@ -1,0 +1,6 @@
+name: I.F. Helper Captcha
+description: Configure the ability to add a captcha as default for all webforms.
+package: Custom
+type: module
+core_version_requirement: ^8.8 || ^9
+version: 1.2

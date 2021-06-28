@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9efb6915a45e9056f36b05a3bf9cc4b",
+    "content-hash": "932a8da5a7a114754faf8e9a5f2307ed",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5211,6 +5211,32 @@
                 "source": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git"
             },
             "time": "2021-06-24T20:33:50+00:00"
+        },
+        {
+            "name": "ifsight/if_helper",
+            "version": "9.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@git.ifsight.net:proj/contrib/if_helper.git",
+                "reference": "ab623820d4bf04374af5ade3acf7223357a34a05"
+            },
+            "require": {
+                "drupal/core": "^8.8.0|^9.0"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Helper functions for I.F. Sites",
+            "homepage": "https://git.ifsight.net/proj/contrib/if_helper",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://git.ifsight.net/proj/contrib/if_helper/issues",
+                "source": "https://git.ifsight.net/proj/contrib/if_helper.git"
+            },
+            "time": "2021-06-24T22:09:00+00:00"
         },
         {
             "name": "ifsight/paladin",
@@ -12637,6 +12663,7 @@
         "drupal/masquerade": 10,
         "drupal/ultimate_cron": 15,
         "ifsight/fulcrum_whitelist": 20,
+        "ifsight/if_helper": 20,
         "ifsight/paladin": 20
     },
     "prefer-stable": true,

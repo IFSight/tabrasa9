@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Media related customizations for I.F. websites.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_ENTITY_TYPE_delete().
+ *
+ * This implementation is needed so we can remove the underlying file entity
+ * when deleting a media entity.
+ */
+function if_helper_media_media_delete(EntityInterface $entity) {
+  $field = NULL;
+  switch ($entity->bundle()) {
+    case 'audio':
+      $field = 'field_media_audio_file';
+      break;
+
+    case 'file':
+      $field = 'field_media_file';
+      break;
+
+    case 'image':
+      $field = 'field_media_image';
+      break;
+
+    default:
+      return;
+  }
+
+  if (!empty($field)) {
+    // Grab the target_id for the media entity field.
+    if (method_exists($entity, 'hasField') && $entity->hasField($field)) {
+
+      $field = isset($entity->{$field}) ? $entity->{$field} : NULL;
+      $field_reference = $field->getValue();
+
+    }
+    if (!empty($field_reference->target_id)) {
+      // Load the file entity so we can report on it and delete it.
+      $file = File::load($field_reference->target_id);
+
+      if ($file->delete()) {
+
+        \Drupal::logger('if_helper_media')->notice('Deleting media entity referenced @type: (%id) %uri after removing media entity (%media_id) %media_label.', [
+          '@type' => $entity->bundle(),
+          '%id' => $file->id(),
+          '%uri' => $file->getFileUri(),
+          '%media_id' => $entity->id(),
+          '%media_label' => $entity->label(),
+        ]);
+
+      }
+    }
+  }
+}
