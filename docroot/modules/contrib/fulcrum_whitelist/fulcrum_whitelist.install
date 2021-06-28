@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Installation and update functionality for fulcrum_whitelist module.
+ */
+
+// Include helper routine _fulcrum_whitelist_create_tokens.
+module_load_include('module', 'fulcrum_whitelist');
+
+/**
+ * Implements hook_install().
+ */
+function fulcrum_whitelist_install() {
+  _fulcrum_whitelist_create_tokens();
+}
+
+/**
+ * Update the default delay seconds to 20.
+ */
+function fulcrum_whitelist_update_8001() {
+  \Drupal::configFactory()->getEditable('fulcrum_whitelist.fulcrumwhitelistconfig')
+    ->set('delay', 20)
+    ->save();
+}

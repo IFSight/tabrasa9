@@ -58,6 +58,7 @@
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^10.4",
+        "ifsight/fulcrum_whitelist": "^9.1.x-dev",
         "ifsight/paladin": "9.1.x-dev",
         "oomphinc/composer-installers-extender": "^2.0",
         "wikimedia/composer-merge-plugin": "^2.0"
