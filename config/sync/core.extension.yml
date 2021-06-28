@@ -45,9 +45,11 @@ module:
   help: 0
   history: 0
   if_helper: 0
+  if_helper_media: 0
   if_varnish_purge_tags: 0
   image: 0
   jquery_ui: 0
+  jquery_ui_accordion: 0
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
@@ -95,6 +97,7 @@ module:
   tour: 0
   twig_tweak: 0
   ultimate_cron: 0
+  update: 0
   user: 0
   varnish_purger: 0
   views_ui: 0
