@@ -1,0 +1,24 @@
+name: I.F. Administration
+type: theme
+project: 'if_admin'
+core_version_requirement: ^8.8 || ^9
+description: 'I.F. sub-theme based on Adminimal.'
+base theme: adminimal_theme
+
+libraries:
+  - if_admin/global-styling
+  - if_admin/custom-scripts
+
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first
+

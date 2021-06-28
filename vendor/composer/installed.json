@@ -3975,6 +3975,61 @@
         }
     },
     {
+        "name": "drupal/jquery_ui_accordion",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/jquery_ui_accordion.git",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/jquery_ui_accordion-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "988a3da3b0bc3042e2f42fd20e401272f8369bbd"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9",
+            "drupal/jquery_ui": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1584106477",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "bnjmnm",
+                "homepage": "https://www.drupal.org/user/2369194"
+            },
+            {
+                "name": "lauriii",
+                "homepage": "https://www.drupal.org/user/1078742"
+            },
+            {
+                "name": "zrpnr",
+                "homepage": "https://www.drupal.org/user/1448368"
+            }
+        ],
+        "description": "Provides jQuery UI Accordion library.",
+        "homepage": "https://www.drupal.org/project/jquery_ui_accordion",
+        "support": {
+            "source": "https://git.drupalcode.org/project/jquery_ui_accordion"
+        }
+    },
+    {
         "name": "drupal/jquery_ui_datepicker",
         "version": "1.1.0",
         "version_normalized": "1.1.0.0",
@@ -6429,15 +6484,33 @@
     },
     {
         "name": "ifsight/if_varnish_purge_tags",
-        "version": "0.2",
-        "version_normalized": "0.2.0.0",
+        "version": "9.1.x-dev",
+        "version_normalized": "9.1.9999999.9999999-dev",
         "source": {
             "type": "git",
             "url": "git@git.ifsight.net:proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8.git",
-            "reference": "0.2"
+            "reference": "827e5862dfa66ec2c922777faa1b15ea610b2aff"
         },
+        "require": {
+            "drupal/core": "^8.8.0|^9.0",
+            "drupal/varnish_purger": "^1.0|^2.0"
+        },
+        "time": "2021-06-28T18:54:43+00:00",
         "type": "drupal-module",
-        "installation-source": "source"
+        "installation-source": "source",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "description": "IF Varnish Purge Tags",
+        "homepage": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "issues": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8/issues",
+            "source": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8.git",
+            "docs": "https://git.ifsight.net/proj/contrib/fulcrum-authscale/"
+        }
     },
     {
         "name": "ifsight/paladin",
@@ -6465,36 +6538,6 @@
         "support": {
             "issues": "http://git.ifsight.net/proj/contrib/if-paladin-theme/issues",
             "source": "http://git.ifsight.com/proj/contrib/if-paladin-theme"
-        }
-    },
-    {
-        "name": "ifsight/varnish_purge_tags",
-        "version": "9.1.x-dev",
-        "version_normalized": "9.1.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "git@git.ifsight.net:proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8.git",
-            "reference": "2f5cd2b54088920169e24e4a1634f300714975e4"
-        },
-        "require": {
-            "drupal/core": "^8.8.0|^9.0",
-            "drupal/varnish_purger": "^1.0|^2.0"
-        },
-        "time": "2021-06-25T16:34:49+00:00",
-        "type": "drupal-module",
-        "installation-source": "source",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "description": "IF Varnish Purge Tags",
-        "homepage": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8",
-        "keywords": [
-            "Drupal"
-        ],
-        "support": {
-            "issues": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8/issues",
-            "source": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8.git",
-            "docs": "https://git.ifsight.net/proj/contrib/fulcrum-authscale/"
         }
     },
     {

@@ -1,0 +1,6 @@
+name: I.F. Helper Media
+description: Media related customizations for I.F. websites.
+package: Custom
+type: module
+version: 1.2
+core_version_requirement: ^8.8 || ^9
