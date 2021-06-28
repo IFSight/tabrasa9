@@ -60,6 +60,7 @@
         "drush/drush": "^10.4",
         "ifsight/fulcrum_whitelist": "^9.1.x-dev",
         "ifsight/if_helper": "^9.1.x-dev",
+        "ifsight/if_varnish_purge_tags": "^9.1.x-dev",
         "ifsight/paladin": "9.1.x-dev",
         "oomphinc/composer-installers-extender": "^2.0",
         "wikimedia/composer-merge-plugin": "^2.0"
@@ -67,7 +68,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "alpha",
     "prefer-stable": true,
     "config": {
         "sort-packages": true

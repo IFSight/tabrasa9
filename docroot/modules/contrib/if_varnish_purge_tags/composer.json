@@ -1,0 +1,17 @@
+{
+  "name": "ifsight/if_varnish_purge_tags",
+  "type": "drupal-module",
+  "description": "IF Varnish Purge Tags",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8",
+  "support": {
+    "issues": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8/issues",
+    "source": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8.git",
+    "docs": "https://git.ifsight.net/proj/contrib/fulcrum-authscale/"
+  },
+  "require": {
+    "drupal/core": "^8.8.0|^9.0",
+    "drupal/varnish_purger":"^1.0|^2.0"
+  }
+}

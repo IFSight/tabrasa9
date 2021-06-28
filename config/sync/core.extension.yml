@@ -45,6 +45,7 @@ module:
   help: 0
   history: 0
   if_helper: 0
+  if_varnish_purge_tags: 0
   image: 0
   jquery_ui: 0
   jquery_ui_datepicker: 0
