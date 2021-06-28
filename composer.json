@@ -58,19 +58,14 @@
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^10.4",
-        "ifsight/fulcrum_whitelist": "^9.1.x-dev",
-        "ifsight/if_admin": "9.1.x-dev",
-        "ifsight/if_helper": "^9.1.x-dev",
-        "ifsight/if_varnish_purge_tags": "0.2",
         "ifsight/paladin": "9.1.x-dev",
-        "ifsight/varnish_purge_tags": "^9.1.x-dev",
         "oomphinc/composer-installers-extender": "^2.0",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "alpha",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true

@@ -4735,53 +4735,6 @@
         }
     },
     {
-        "name": "drupal/purge_tokens",
-        "version": "3.0.0",
-        "version_normalized": "3.0.0.0",
-        "require": {
-            "drupal/core": "^8.7.7 || ^9",
-            "drupal/purge": "^3.0.0-beta9",
-            "php": ">=7.2"
-        },
-        "type": "metapackage",
-        "extra": {
-            "drupal": {
-                "version": "8.x-3.0",
-                "datestamp": "1590744318",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            },
-            "branch-alias": {
-                "dev-8.x-3.x": "3.x-dev"
-            }
-        },
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "Niels van Mourik",
-                "homepage": "http://www.nielsvm.org"
-            },
-            {
-                "name": "djbobbydrake",
-                "homepage": "https://www.drupal.org/user/336378"
-            },
-            {
-                "name": "nielsvm",
-                "homepage": "https://www.drupal.org/user/163285"
-            }
-        ],
-        "description": "Adds tokens support for external cache invalidation.",
-        "homepage": "https://www.drupal.org/project/purge",
-        "support": {
-            "source": "https://git.drupalcode.org/project/purge"
-        }
-    },
-    {
         "name": "drupal/redirect",
         "version": "1.6.0",
         "version_normalized": "1.6.0.0",
@@ -5525,65 +5478,6 @@
                 "homepage": "https://www.drupal.org/user/2479724"
             }
         ],
-        "homepage": "https://www.drupal.org/project/varnish_purge",
-        "support": {
-            "source": "https://git.drupalcode.org/project/varnish_purge"
-        }
-    },
-    {
-        "name": "drupal/varnish_purger",
-        "version": "2.1.0",
-        "version_normalized": "2.1.0.0",
-        "require": {
-            "drupal/core": "^8 || ^9",
-            "drupal/purge": "~3.0",
-            "drupal/purge_tokens": "*",
-            "drupal/varnish_purge": "self.version"
-        },
-        "require-dev": {
-            "behat/mink-extension": "v2.2",
-            "behat/mink-selenium2-driver": "1.3.x-dev",
-            "bex/behat-screenshot": "dev-master",
-            "drupal/coder": "^8.3",
-            "drupal/drupal-extension": "master-dev",
-            "drupal/purge": "dev-3.x",
-            "phpmd/phpmd": "dev-master",
-            "phpmetrics/phpmetrics": "dev-master"
-        },
-        "type": "metapackage",
-        "extra": {
-            "drupal": {
-                "version": "8.x-2.1",
-                "datestamp": "1615977068",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            }
-        },
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "MiSc",
-                "homepage": "https://www.drupal.org/user/382892"
-            },
-            {
-                "name": "deadbeef",
-                "homepage": "https://www.drupal.org/user/93644"
-            },
-            {
-                "name": "javivf",
-                "homepage": "https://www.drupal.org/user/2789335"
-            },
-            {
-                "name": "littlethoughts",
-                "homepage": "https://www.drupal.org/user/2479724"
-            }
-        ],
-        "description": "Provides a purger for Varnish for Purger module.",
         "homepage": "https://www.drupal.org/project/varnish_purge",
         "support": {
             "source": "https://git.drupalcode.org/project/varnish_purge"
@@ -6344,102 +6238,6 @@
         ]
     },
     {
-        "name": "ifsight/fulcrum_whitelist",
-        "version": "9.1.x-dev",
-        "version_normalized": "9.1.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "git@git.ifsight.net:proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git",
-            "reference": "ae7cdf8ddcf06519e666a6eb259b387f503e605a"
-        },
-        "require": {
-            "drupal/core": "^8.8.0|^9.0"
-        },
-        "time": "2021-06-24T20:33:50+00:00",
-        "type": "drupal-module",
-        "installation-source": "source",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "description": "On Fulcrum environment whitelist authenticated users",
-        "homepage": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8",
-        "keywords": [
-            "Drupal"
-        ],
-        "support": {
-            "issues": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8/issues",
-            "source": "https://git.ifsight.net/proj/contrib/fulcrum_whitelist/fulcrum_whitelist_drupal_8.git"
-        }
-    },
-    {
-        "name": "ifsight/if_admin",
-        "version": "9.1.x-dev",
-        "version_normalized": "9.1.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "git@git.ifsight.net:proj/contrib/if-admin-theme.git",
-            "reference": "54e413adf38037cc7c0e0cc47841cb690d4d791a"
-        },
-        "require": {
-            "drupal/core": "^8.8.0|^9.0"
-        },
-        "time": "2021-06-22T18:49:10+00:00",
-        "type": "drupal-theme",
-        "installation-source": "source",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "description": "IF Admin is an enhanced Drupal admin theme",
-        "homepage": "http://git.ifsight.com/proj/contrib/if-admin-theme",
-        "keywords": [
-            "Drupal"
-        ],
-        "support": {
-            "issues": "http://git.ifsight.net/proj/contrib/if-admin-theme/issues",
-            "source": "http://git.ifsight.com/proj/contrib/if-admin-theme"
-        }
-    },
-    {
-        "name": "ifsight/if_helper",
-        "version": "9.1.x-dev",
-        "version_normalized": "9.1.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "git@git.ifsight.net:proj/contrib/if_helper.git",
-            "reference": "ab623820d4bf04374af5ade3acf7223357a34a05"
-        },
-        "require": {
-            "drupal/core": "^8.8.0|^9.0"
-        },
-        "time": "2021-06-24T22:09:00+00:00",
-        "type": "drupal-module",
-        "installation-source": "source",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "description": "Helper functions for I.F. Sites",
-        "homepage": "https://git.ifsight.net/proj/contrib/if_helper",
-        "keywords": [
-            "Drupal"
-        ],
-        "support": {
-            "issues": "https://git.ifsight.net/proj/contrib/if_helper/issues",
-            "source": "https://git.ifsight.net/proj/contrib/if_helper.git"
-        }
-    },
-    {
-        "name": "ifsight/if_varnish_purge_tags",
-        "version": "0.2",
-        "version_normalized": "0.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "git@git.ifsight.net:proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8.git",
-            "reference": "0.2"
-        },
-        "type": "drupal-module",
-        "installation-source": "source"
-    },
-    {
         "name": "ifsight/paladin",
         "version": "9.1.x-dev",
         "version_normalized": "9.1.9999999.9999999-dev",
@@ -6465,36 +6263,6 @@
         "support": {
             "issues": "http://git.ifsight.net/proj/contrib/if-paladin-theme/issues",
             "source": "http://git.ifsight.com/proj/contrib/if-paladin-theme"
-        }
-    },
-    {
-        "name": "ifsight/varnish_purge_tags",
-        "version": "9.1.x-dev",
-        "version_normalized": "9.1.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "git@git.ifsight.net:proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8.git",
-            "reference": "2f5cd2b54088920169e24e4a1634f300714975e4"
-        },
-        "require": {
-            "drupal/core": "^8.8.0|^9.0",
-            "drupal/varnish_purger": "^1.0|^2.0"
-        },
-        "time": "2021-06-25T16:34:49+00:00",
-        "type": "drupal-module",
-        "installation-source": "source",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "description": "IF Varnish Purge Tags",
-        "homepage": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8",
-        "keywords": [
-            "Drupal"
-        ],
-        "support": {
-            "issues": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8/issues",
-            "source": "https://git.ifsight.net/proj/contrib/if-varnish-purge-tags/if_varnish_purge_tags_drupal_8.git",
-            "docs": "https://git.ifsight.net/proj/contrib/fulcrum-authscale/"
         }
     },
     {
