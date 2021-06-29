@@ -1,11 +1,11 @@
-uuid: 4fdf4467-8d01-4206-871a-da3c95bbacaa
+uuid: 878cb084-ac50-48ae-8999-02a5e4dd3a1f
 langcode: en
 status: true
 dependencies: {  }
-id: e056c8a39b
-name: varnish1
+id: 529e87741a
+name: varnish3
 invalidationtype: tag
-hostname: varnish01-noc1.shar.ifops
+hostname: varnish01-noc3.shar.ifops
 port: 80
 path: /
 request_method: BAN
