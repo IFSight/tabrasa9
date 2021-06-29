@@ -17,65 +17,79 @@ class FulcrumWhitelistController extends ControllerBase {
    *   Return whitelist page.
    */
   public function whitelist($authtoken) {
+
     // Don't cache this page.
     \Drupal::service('page_cache_kill_switch')->trigger();
 
     $config = \Drupal::config('fulcrum_whitelist.fulcrumwhitelistconfig');
+
     /** @var mixed $environmentAbbreviation */
     $environmentAbbreviation = $this->environmentAbbreviation();
+
     // Make sure we are configured.
     if (isset($environmentAbbreviation->abbr) &&
       isset($environmentAbbreviation->env) &&
       $environmentAbbreviation->abbr != 'unkn'
     ) {
-      $selectSQL = $this->t($this->nameEmailFromAuthToken(), ['@authtoken' => $authtoken]);
+
+      $database = \Drupal::database();
 
       // Lookup user by token, make sure there user and token is enabled.
-      if ((
-        $account = \Drupal::database()->query($selectSQL)->fetchObject()) &&
-        isset($account->mail) && isset($account->uid)
-      ) {
-        // Curl the whitelist with http://172.17.0.16:18888/
-        // scvw/prd/1.2.3.4/foo@bar.com
-        $params = [
-          '@host' => $config->get('whitelist_host'),
-          '@port' => $config->get('port'),
-          '@abbr' => $environmentAbbreviation->abbr,
-          '@env'  => $environmentAbbreviation->env,
-        // \Drupal::request()->getClientIp(),
-          '@ip'   => $_SERVER['HTTP_X_CLIENT_IP'],
-          '@mail' => $account->mail,
-        ];
+      $query = $database->select('users_field_data', 'u');
+      $query->leftJoin('fulcrum_whitelist_entity__field_user', 'w', 'u.uid = w.field_user_target_id');
+      $query->leftJoin('fulcrum_whitelist_entity', 'e', 'w.entity_id = e.id');
+      $query
+        ->fields('u', ['uid', 'mail'])
+        ->condition('u.status', '1')
+        ->condition('e.status', '1')
+        ->condition('e.name', "$authtoken")
+        ->range(0, 1)
+        ->addTag('fulcrum_whitelist');
+      $count = $query->countQuery()->execute()->fetchField();
 
-        $url = $this->t('http://@host:@port/@abbr/@env/@ip/@mail', $params);
+      if (!empty($count)) {
 
-        // Add watchdog.
-        \Drupal::logger('fulcrum_whitelist')
-          ->notice(
-            $this->t(
-              'Whitelist UID: @uid mail: @mail url: @url',
-              [
-                '@url'  => $url,
-                '@uid'  => $account->uid,
-                '@mail' => $account->mail,
-              ]
-            )
-          );
+        $account = $query->execute()->fetchObject();
+        if (isset($account->mail) && isset($account->uid)) {
 
-        $result = file_get_contents($url);
+          // Curl the whitelist with http://172.17.0.16:18888/
+          // scvw/prd/1.2.3.4/foo@bar.com
+          $params = [
+            '@host' => $config->get('whitelist_host'),
+            '@port' => $config->get('port'),
+            '@abbr' => $environmentAbbreviation->abbr,
+            '@env'  => $environmentAbbreviation->env,
+          // \Drupal::request()->getClientIp(),
+            '@ip'   => $_SERVER['HTTP_X_CLIENT_IP'],
+            '@mail' => $account->mail,
+          ];
 
-        // Return the themed wait redirect.
-        return $this->dechromePage($config->get('wait_text'), TRUE);
+          $url = $this->t('http://@host:@port/@abbr/@env/@ip/@mail', $params);
+
+          // Add watchdog.
+          \Drupal::logger('fulcrum_whitelist')->notice(
+              $this->t(
+                'Whitelist UID: @uid mail: @mail url: @url',
+                [
+                  '@url'  => $url,
+                  '@uid'  => $account->uid,
+                  '@mail' => $account->mail,
+                ]
+              ));
+
+          $result = file_get_contents($url);
+
+          // Return the themed wait redirect.
+          return $this->dechromePage($config->get('wait_text'), TRUE);
+        }
       }
       else {
         // Add watchdog.
-        \Drupal::logger('fulcrum_whitelist')
-          ->notice(
+        \Drupal::logger('fulcrum_whitelist')->notice(
             $this->t(
               'Whitelist attempt failed for token: @authtoken',
               ['@authtoken' => $authtoken]
-            )
-                );
+            ));
 
         return $this->dechromePage($config->get('fail_text'));
       }
@@ -167,20 +181,6 @@ class FulcrumWhitelistController extends ControllerBase {
     $response->setContent($html);
 
     return $response;
-  }
-
-  /**
-   * Provide SQL for associating a user and token.
-   */
-  private function nameEmailFromAuthToken() {
-    return <<< SQL
-      SELECT u.uid, u.mail
-      FROM {users_field_data} u
-      JOIN {fulcrum_whitelist_entity__field_user} w ON u.uid = w.field_user_target_id
-      JOIN {fulcrum_whitelist_entity} e ON w.entity_id = e.id AND e.status = 1
-      WHERE u.status = 1
-      AND e.name = '@authtoken'
-SQL;
   }
 
 }
