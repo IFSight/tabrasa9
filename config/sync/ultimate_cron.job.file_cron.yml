@@ -1,4 +1,4 @@
-uuid: 541daeeb-69a4-4d33-9de3-07a620b3aebb
+uuid: 9d4d90d9-6214-46fa-881c-300034f2acba
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - file
 title: 'Deletes temporary files'
 id: file_cron
-weight: 0
+weight: -3
 module: file
 callback: file_cron
 scheduler:

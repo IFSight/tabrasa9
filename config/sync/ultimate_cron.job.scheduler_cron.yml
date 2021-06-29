@@ -1,4 +1,4 @@
-uuid: 2785b050-8792-46f9-8a0f-ff4388b11254
+uuid: 403737cb-27f5-4c6a-ba7b-d463b891be3c
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,24 @@ dependencies:
     - scheduler
 title: 'Default cron handler'
 id: scheduler_cron
-weight: 0
+weight: -8
 module: scheduler
 callback: scheduler_cron
 scheduler:
   id: simple
+  configuration:
+    rules:
+      - '* * * * *'
 launcher:
   id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
 logger:
   id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

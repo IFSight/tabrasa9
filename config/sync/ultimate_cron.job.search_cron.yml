@@ -1,4 +1,4 @@
-uuid: 2ae29f2b-2b42-4275-89a7-6a522831a4be
+uuid: 51a908e2-65fc-4015-8706-bbf36e0556a6
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - search
 title: 'Updates indexable active search pages'
 id: search_cron
-weight: 0
+weight: 2
 module: search
 callback: search_cron
 scheduler:

@@ -1,4 +1,4 @@
-uuid: ac41e11e-797f-453e-a6d6-c8232dcec0cd
+uuid: e18959ca-4527-4bc5-8f76-a1e5e0d5dd29
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - history
 title: 'Deletes history'
 id: history_cron
-weight: 0
+weight: -4
 module: history
 callback: history_cron
 scheduler:
